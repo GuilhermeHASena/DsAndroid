@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ds</string>
+
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Senha</string>
+    <string name="buttonConectar">Conectar</string>
+    <string name="empresaTitle">Tourism on Mars Company</string>
+    <string name="apresentacaoText">Alguma vez alguém olhou para o céu e pensou, será que é possível chegar até lá?. Tudo isso começou a ser possível por causa de uma pessoa, o bilionário britânico Richard Branson, sem ele provavelmente demorariamos mais em tornar a viagem espacial possível. O primeiro voo foi em Novo México, Estados Unidos. Na qual foi composto por 6 pessoas. Curtiu esse ínicio ? A proxíma viagem pode ser COM VOCÊ INDO AO ESPAÇO !</string>
+    <string name="buttonSaibaMais">Saiba Mais</string>
+    <string name="saibaMaisTitle">Saiba Mais</string>
+    <string name="saibaMaisText">Nós estamos aqui para realizar o seu sonho de ir visitar marte, imagina conhecer o planeta vermelho sem precisar sair da segurança da espaçonave? Nossa empresa Tourism on Mars Company está aqui para te ajudar com essa experiência. Como vai funcionar? cada passageiro irá ter um drone equipado com duas câmeras fotográficas uma câmera preto e branco, apontada para o solo, e outra câmera colorida, apontada para o horizonte , os turistas podem tirar quantas fotografias quiserem.</string>
+    <string name="buttomAgendarViagem">Agendar Viagem</string>
+    <string name="ViagemListaTitle">Lista de Viagens</string>
+    <string name="ItemNome">Nome:</string>
+    <string name="ItemDataViagem">Data Viagem:</string>
+    <string name="ItemDataVolta">Data Volta:</string>
+    <string name="cadastrarVigemTitle">Cadastrar Viagem</string>
+</resources>

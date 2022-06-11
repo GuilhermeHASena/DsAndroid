@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txSaibaMaisTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:text="@string/saibaMaisTitle"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ivRocketImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivRocketImage"
+            android:layout_width="800dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/foguete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txSaibaMaisTitle" />
+
+        <TextView
+            android:id="@+id/txSaibaMaisText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:paddingHorizontal="25dp"
+            android:text="@string/saibaMaisText"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/ivRocketImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/btAgendar"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/buttomAgendarViagem"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txSaibaMaisText"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

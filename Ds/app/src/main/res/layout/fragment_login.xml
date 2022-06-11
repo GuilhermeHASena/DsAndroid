@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/ivScaniaLogo"
+            android:layout_width="800dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_rocket_logo"
+            app:layout_constraintBottom_toTopOf="@id/etEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_email_24dp"
+            android:drawablePadding="8dp"
+            android:elevation="8dp"
+            android:hint="@string/emailHint"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivScaniaLogo" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_lock_24dp"
+            android:drawablePadding="8dp"
+            android:elevation="8dp"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+        <Button
+            android:id="@+id/btConectar"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/buttonConectar"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSenha" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
