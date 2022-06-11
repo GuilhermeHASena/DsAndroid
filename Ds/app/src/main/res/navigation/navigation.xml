@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="fiap.com.br.ds.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_apresentacaoFragment"
+            app:destination="@id/apresentacaoFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/apresentacaoFragment"
+        android:name="fiap.com.br.ds.ApresentacaoFragment"
+        android:label="fragment_apresentacao"
+        tools:layout="@layout/fragment_apresentacao" >
+        <action
+            android:id="@+id/action_apresentacaoFragment_to_saibaMaisFragment"
+            app:destination="@id/saibaMaisFragment"
+            app:popUpTo="@id/apresentacaoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saibaMaisFragment"
+        android:name="fiap.com.br.ds.SaibaMaisFragment"
+        android:label="fragment_saiba_mais"
+        tools:layout="@layout/fragment_saiba_mais" >
+        <action
+            android:id="@+id/action_saibaMaisFragment_to_listarFragment"
+            app:destination="@id/listarFragment"
+            app:popUpTo="@id/saibaMaisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listarFragment"
+        android:name="fiap.com.br.ds.ListarFragment"
+        android:label="ListarFragment" >
+        <action
+            android:id="@+id/action_listarFragment_to_cadastrarFragment"
+            app:destination="@id/cadastrarFragment"
+            app:popUpTo="@id/listarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarFragment"
+        android:name="fiap.com.br.ds.CadastrarFragment"
+        android:label="CadastrarFragment" >
+        <action
+            android:id="@+id/action_cadastrarFragment_to_listarFragment"
+            app:destination="@id/listarFragment" />
+    </fragment>
+</navigation>
