@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txExerciseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastrarVigemTitle"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etViagemNome"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="10dp"
+            android:background="@color/lightgray"
+            android:hint="Nome"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txExerciseTitle"/>
+
+        <EditText
+            android:id="@+id/etViagemDataViagem"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:background="@color/lightgray"
+            android:hint="Data da Viagem"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etViagemNome"/>
+
+        <EditText
+            android:id="@+id/etViagemDataVolta"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:background="@color/lightgray"
+            android:hint="Data de Volta"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etViagemDataViagem"/>
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="Cadastrar"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etViagemDataVolta" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
